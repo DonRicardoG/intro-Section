@@ -1,0 +1,205 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+.logoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoList ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.logoList ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.logoList ul li button:hover {
+  cursor: pointer;
+}
+
+.logoList ul li button:hover:disabled {
+  cursor: default;
+}
+
+.logoList ul li button img {
+  margin: 0;
+}
+
+.logoList img {
+  margin-top: 1rem;
+}
+.navBarList {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.register {
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 1rem;
+}
+
+.btnsContainer {
+  display: none;
+  gap: 2.5rem;
+}
+
+.btnsContainer button:hover {
+  cursor: pointer;
+}
+
+.menuStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+}
+
+.menuStyle button {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between !important;
+}
+
+.menuItemStyle {
+  display: flex;
+}
+
+.menuItemStyle p {
+  margin: 0;
+  width: 60px;
+}
+
+.listContainer {
+  display: none !important;
+}
+
+@media (min-width: 500px) {
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .logoList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoList ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .logoList ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  .logoList ul li button:hover {
+    cursor: pointer;
+  }
+
+  .logoList ul li button:hover:disabled {
+    cursor: default;
+  }
+
+  .logoList ul li button img {
+    margin: 0;
+  }
+
+  .logoList img {
+    margin-top: 1rem;
+  }
+  .navBarList {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+  }
+
+  .login {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  .register {
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 1rem;
+  }
+
+  .btnsContainer {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .btnsContainer button:hover {
+    cursor: pointer;
+  }
+
+  .menuStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 5px 20px 34px 8px rgba(0, 0, 0, 0.17);
+  }
+
+  .menuStyle button {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between !important;
+  }
+
+  .menuItemStyle {
+    display: flex;
+  }
+
+  .menuItemStyle p {
+    margin: 0;
+    width: 60px;
+  }
+
+  .listContainer {
+    display: flex !important;
+  }
+}

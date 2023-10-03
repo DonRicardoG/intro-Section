@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+  color: hsl(0, 0%, 8%);
+
+  &.fijar-body {
+    overflow: hidden;
+  }
+  &.body-scroll {
+    padding-top: 8.6rem;
+  }
+}
