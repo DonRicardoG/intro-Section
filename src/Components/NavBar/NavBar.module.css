@@ -11,6 +11,121 @@
   align-items: center;
 }
 
+.divOverLayOpen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: white;
+  position: fixed;
+  right: 0;
+  padding: 1rem;
+  transition: 0.4s all ease;
+  top: 0;
+  padding-top: 7rem;
+  background-color: hsl(0, 0%, 0%, 30%);
+}
+
+.divOverLayClose {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: white;
+  position: fixed;
+  right: 0;
+  padding: 1rem;
+  transition: 0.4s all ease;
+  top: 0;
+  padding-top: 7rem;
+  background-color: hsl(0, 0%, 0%, 30%);
+}
+
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: 0.4s all ease;
+  position: relative;
+  right: 0;
+  height: 50px;
+  z-index: 1111;
+  top: 0;
+  width: 55px;
+  background-color: transparent;
+}
+
+.menuBtn:hover {
+  cursor: pointer;
+}
+
+.menuBtnClose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: 0.4s all ease;
+  position: relative;
+  right: 0;
+  height: 40px;
+  z-index: 1111;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+
+.menuBtnClose:hover {
+  cursor: pointer;
+}
+
+.littleHr {
+  position: relative;
+  width: 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 8%);
+  transition: 0.4s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigHr {
+  position: relative;
+  width: 35px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 8%);
+  transition: 0.4s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigHrX {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 8%);
+  transition: 0.4s all ease;
+}
+
+.littleHrX {
+  position: absolute;
+  width: 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 8%);
+  transform: rotate(-45deg);
+  transition: 0.4s all ease;
+}
+
 .logoList ul {
   display: flex;
   align-items: center;
@@ -98,6 +213,11 @@
 
 .listContainer {
   display: none !important;
+}
+
+.btnCollapse {
+  display: flex;
+  z-index: 1111;
 }
 
 @media (min-width: 500px) {
@@ -201,5 +321,84 @@
 
   .listContainer {
     display: flex !important;
+  }
+
+  .btnCollapse {
+    display: none;
+  }
+
+  .divOverLayOpen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: fixed;
+    right: 0;
+    padding: 1rem;
+    transition: 0.4s all ease;
+    top: 0;
+    padding-top: 7rem;
+    background-color: hsl(0, 0%, 0%, 30%);
+  }
+
+  .divOverLayClose {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: fixed;
+    right: 0;
+    padding: 1rem;
+    transition: 0.4s all ease;
+    top: 0;
+    padding-top: 7rem;
+    background-color: hsl(0, 0%, 0%, 30%);
+  }
+
+  .menuBtn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    transition: 0.4s all ease;
+    position: relative;
+    right: 0;
+    height: 50px;
+    z-index: 1111;
+    top: 0;
+    width: 55px;
+    background-color: transparent;
+  }
+
+  .menuBtn:hover {
+    cursor: pointer;
+  }
+
+  .menuBtnClose {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    transition: 0.4s all ease;
+    position: relative;
+    right: 0;
+    height: 40px;
+    z-index: 1111;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+  .menuBtnClose:hover {
+    cursor: pointer;
   }
 }

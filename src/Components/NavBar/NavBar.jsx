@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import style from "./NavBar.module.css";
@@ -7,8 +7,17 @@ import CalendarIcon from "../../assets/images/icon-calendar.svg";
 import TodoIcon from "../../assets/images/icon-todo.svg";
 import RemindersIcon from "../../assets/images/icon-reminders.svg";
 import PlanningIcon from "../../assets/images/icon-planning.svg";
+import MenuNavBar from "../MenuNavBar/MenuNavBar";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const handleMenu = () => {
+    if (open === true) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  };
   return (
     <div className={style.navBarContainer}>
       <div className={style.logoList}>
@@ -63,6 +72,19 @@ const NavBar = () => {
         <button className={style.login}>Login</button>
         <button className={style.register}>Register</button>
       </div>
+
+      <button
+        className={open === true ? style.menuBtnClose : style.menuBtn}
+        onClick={handleMenu}
+      >
+        <hr className={open === true ? style.bigHrX : style.bigHr} />
+        <hr className={open === true ? style.littleHrX : style.littleHr} />
+      </button>
+      <div
+        className={open === true ? style.divOverLayOpen : style.divOverLayClose}
+        onClick={handleMenu}
+      ></div>
+      <MenuNavBar open={open} />
     </div>
   );
 };
